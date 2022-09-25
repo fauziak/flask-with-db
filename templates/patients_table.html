@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Patients</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/patients_table.css') }}">
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>MRN</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>DOB</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Type of Visit</th>
+          </tr>        
+        {% for patient in patients %}
+        <tr>
+          <td>{{ patient[0] }}</td>
+          <td>{{ patient[1] }}</td>
+          <td>{{ patient[2] }}</td>
+          <td>{{ patient[3] }}</td>
+          <td>{{ patient[4] }}</td>
+          <td>{{ patient[5] }}</td>
+          <td>{{ patient[6] }}</td>
+          <td>{{ patient[7] }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+</body>
+</html>
+
