@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, make_response
 import sqlite3
  
 
-HOST_NAME = "localhost"
+HOST_NAME = "0.0.0.0"
 HOST_PORT = 5000
 DBFILE = "patients.db"
 app = Flask(__name__)
