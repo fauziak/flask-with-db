@@ -4,7 +4,7 @@ import sqlite3
  
 
 HOST_NAME = "0.0.0.0"
-HOST_PORT = 5000
+HOST_PORT = 80
 DBFILE = "patients.db"
 app = Flask(__name__)
 
