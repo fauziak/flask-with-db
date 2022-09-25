@@ -23,5 +23,5 @@ def index():
   return render_template("patients_table.html", patients=patients)
 
 if __name__ == "__main__":
-  app.run(HOST_NAME, HOST_PORT)
+  app.run(HOST_NAME, HOST_PORT, True)
   
